@@ -3,7 +3,7 @@
     background-color: black;
     padding:5px;
     color:white;
-    font-size: medium;
+    font-size:large;
 }
 
 .flex-container{
@@ -25,10 +25,17 @@
     display:flex;
     gap:10px;
     margin:5px;
-    justify-content: space-evenly;
+    justify-items: center;
 }
 
 .main{
     flex-grow: 6;
 }
 
+.sidebar{
+    flex-basis: 3;
+}
+
+.footer{
+    justify-content: space-evenly;
+}
