@@ -1,9 +1,34 @@
 *{
-    border:3px solid limegreen;
+    border:1px solid limegreen;
     background-color: black;
     padding:5px;
     color:white;
     font-size: medium;
 }
 
+.flex-container{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items: center;
+
+}
+
+.header{
+    text-align: center;
+    font-size: medium;
+    padding: 10px;
+    width:100px;
+}
+
+.nav{
+    display:flex;
+    gap:10px;
+    margin:5px;
+    justify-content: space-evenly;
+}
+
+.main{
+    flex-grow: 6;
+}
 
