@@ -1,0 +1,62 @@
+/* this class makes sure everything is following these specifications */
+*{
+    border:1px solid greenyellow;
+    background-color: black;
+    color:white;
+    font-size:medium;
+    gap:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* this class makes sure that the flex container follows these specifications. The flex direction makes sure that the box shows in a column orientation and the align-items centers the text and all other classes. */
+.flex-container{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items: center;
+
+}
+/* this header class makes sure the header follows these specifications. The width for the header becomes the specified pixels according to the width attribute in the header class. */
+.header{
+    text-align: center;
+    font-size: medium;
+    width:150px;
+}
+/* the flex basis makes sure that the nav only takes up 50% of the space. The justify-content and align-content makes sure that the flex container and the text inside is centered on the web page. */
+.nav{
+    width:25%;
+    flex-basis:50%;
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    
+
+}
+/* the flex grow multiplies the size of the main content area container based on the number input. The flex-basis for the main content area takes up 70% of the space.Setting the display to flex allows the flex attributes to work on the webpage */
+.main{
+    flex-grow:1;
+    display:flex;
+    flex-basis:70%
+}
+/* The flex grow multiplies the size of the  sidebar container based on the number input. The flex basis for the sidebar area takes up only 30% of the space. Setting the display to flex allows the flex attributes to work on the webpage */
+.sidebar{
+    flex-grow:2;
+    flex-basis:50px;
+    display:flex;
+    flex-basis: 30%;
+}
+
+/* This container class is for the main class and sidebar class and it allows for the main and sidebar flex basis to affect the container sizes. */
+.container{
+    display:flex;
+}
+
+/* The justify content for the footer container makes sure to evenly space out the images and text in the footer using the display flex. The align content centers the content inside the footer. */
+.footer{
+    justify-content: space-evenly;
+    display:flex;
+    align-content: center;
+}
+/* the display set to flex allows the contact container to be centered. */
+.contact{
+    display:flex;
+}
